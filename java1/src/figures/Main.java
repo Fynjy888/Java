@@ -23,14 +23,14 @@ public class Main {
             System.out.println("периметр квадрата: "+s2.getPerimeter());
     		System.out.println("площадь квадрата: "+s2.getArea());
             break;
-        case "пр¤моугольник":
-            System.out.println("введите ширину пр¤моугольника");
+        case "прямоугольник":
+            System.out.println("введите ширину прямоугольника");
             a = in.nextInt();
-            System.out.println("введите высоту пр¤моугольника");
+            System.out.println("введите высоту прямоугольника");
             b = in.nextInt();
             figure s3 = new Rectangle (a, b);
-            System.out.println("периметр пр¤моугольника: "+s3.getPerimeter());
-    		System.out.println("площадь пр¤моугольника: "+s3.getArea());
+            System.out.println("периметр прямоугольника: "+s3.getPerimeter());
+    		System.out.println("площадь прямоугольника: "+s3.getArea());
             break;
         case "треугольник":
             System.out.println("введите первую сторону треугольника");
