@@ -1,20 +1,20 @@
 package figures;
 
-class Square extends figure {  // Класс квадрат наследуется от класса фигура
+class Square extends figure {  // РљР»Р°СЃСЃ РєРІР°РґСЂР°С‚ РЅР°СЃР»РµРґСѓРµС‚СЃСЏ РѕС‚ РєР»Р°СЃСЃР° С„РёРіСѓСЂР°
 	 
-    private double sideA; //Поле класса, хранит значение стороны А в описываемом квадрате
+    private double sideA; //РџРѕР»Рµ РєР»Р°СЃСЃР°, С…СЂР°РЅРёС‚ Р·РЅР°С‡РµРЅРёРµ СЃС‚РѕСЂРѕРЅС‹ Рђ РІ РѕРїРёСЃС‹РІР°РµРјРѕРј РєРІР°РґСЂР°С‚Рµ
 
-    public Square(double sideA) { // Конструктор, на вход 1 параметр - сторона А
+    public Square(double sideA) { // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ, РЅР° РІС…РѕРґ 1 РїР°СЂР°РјРµС‚СЂ - СЃС‚РѕСЂРѕРЅР° Рђ
         this.sideA = sideA;
     }
  
-    public double getArea(){ //Метод получить площадь квадрата
+    public double getArea(){ //РњРµС‚РѕРґ РїРѕР»СѓС‡РёС‚СЊ РїР»РѕС‰Р°РґСЊ РєРІР°РґСЂР°С‚Р°
         double square = this.sideA * this.sideA;
-        return square; //Возвращает площадь круга
+        return square; //Р’РѕР·РІСЂР°С‰Р°РµС‚ РїР»РѕС‰Р°РґСЊ РєСЂСѓРіР°
     }
 	
-	public double getPerimeter(){ //Метод получить периметр квадрата
+	public double getPerimeter(){ //РњРµС‚РѕРґ РїРѕР»СѓС‡РёС‚СЊ РїРµСЂРёРјРµС‚СЂ РєРІР°РґСЂР°С‚Р°
         double perimeter = this.sideA * 4;
-        return perimeter; //Возвращает периметр квадрата
+        return perimeter; //Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРµСЂРёРјРµС‚СЂ РєРІР°РґСЂР°С‚Р°
     }
 }

@@ -1,25 +1,25 @@
 package figures;
 
-class Triangle extends figure {  // Класс треугольник наследуется от класса фигура
+class Triangle extends figure {  // РљР»Р°СЃСЃ С‚СЂРµСѓРіРѕР»СЊРЅРёРє РЅР°СЃР»РµРґСѓРµС‚СЃСЏ РѕС‚ РєР»Р°СЃСЃР° С„РёРіСѓСЂР°
 	 
-    private double sideA; //Поле класса, хранит значение стороны А в описываемом треугольнике
-    private double sideB; //Поле класса, хранит значение стороны Б в описываемом треугольнике
-    private double angleAB; //Поле класса, хранит угла(в градусах) между двумя сторонами в описываемом треугольнике
+    private double sideA; //РџРѕР»Рµ РєР»Р°СЃСЃР°, С…СЂР°РЅРёС‚ Р·РЅР°С‡РµРЅРёРµ СЃС‚РѕСЂРѕРЅС‹ Рђ РІ РѕРїРёСЃС‹РІР°РµРјРѕРј С‚СЂРµСѓРіРѕР»СЊРЅРёРєРµ
+    private double sideB; //РџРѕР»Рµ РєР»Р°СЃСЃР°, С…СЂР°РЅРёС‚ Р·РЅР°С‡РµРЅРёРµ СЃС‚РѕСЂРѕРЅС‹ Р‘ РІ РѕРїРёСЃС‹РІР°РµРјРѕРј С‚СЂРµСѓРіРѕР»СЊРЅРёРєРµ
+    private double angleAB; //РџРѕР»Рµ РєР»Р°СЃСЃР°, С…СЂР°РЅРёС‚ СѓРіР»Р°(РІ РіСЂР°РґСѓСЃР°С…) РјРµР¶РґСѓ РґРІСѓРјСЏ СЃС‚РѕСЂРѕРЅР°РјРё РІ РѕРїРёСЃС‹РІР°РµРјРѕРј С‚СЂРµСѓРіРѕР»СЊРЅРёРєРµ
  
-    public Triangle(double sideA, double sideB, double angleAB) { // Конструктор, на вход 3 параметра - сторона А, сторона В и угол
+    public Triangle(double sideA, double sideB, double angleAB) { // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ, РЅР° РІС…РѕРґ 3 РїР°СЂР°РјРµС‚СЂР° - СЃС‚РѕСЂРѕРЅР° Рђ, СЃС‚РѕСЂРѕРЅР° Р’ Рё СѓРіРѕР»
         this.sideA = sideA;
         this.sideB = sideB;
         this.angleAB = angleAB;
     }
  
-    public double getArea(){ //Метод получить площадь треугольника
+    public double getArea(){ //РњРµС‚РѕРґ РїРѕР»СѓС‡РёС‚СЊ РїР»РѕС‰Р°РґСЊ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°
         double square = (this.sideA * this.sideB * Math.sin(this.angleAB * Math.PI / 180))/2;
-        return square; //Возвращает площадь треугольника
+        return square; //Р’РѕР·РІСЂР°С‰Р°РµС‚ РїР»РѕС‰Р°РґСЊ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°
     }
 	
-	public double getPerimeter(){ //Метод получить периметр треугольника
+	public double getPerimeter(){ //РњРµС‚РѕРґ РїРѕР»СѓС‡РёС‚СЊ РїРµСЂРёРјРµС‚СЂ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°
         double sideC = Math.sqrt(Math.pow(this.sideA, 2) + Math.pow(this.sideB, 2) - 2 * this.sideA * this.sideB * Math.cos(this.angleAB * Math.PI / 180));
         double perimeter = this.sideA + this.sideB + sideC;
-        return perimeter; //Возвращает периметр треугольника
+        return perimeter; //Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРµСЂРёРјРµС‚СЂ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°
     }
 }

@@ -1,19 +1,19 @@
 package figures;
 
-class Circle extends figure {  // Класс круг наследуется от класса фигура
+class Circle extends figure {  // РљР»Р°СЃСЃ РєСЂСѓРі РЅР°СЃР»РµРґСѓРµС‚СЃСЏ РѕС‚ РєР»Р°СЃСЃР° С„РёРіСѓСЂР°
 	 
-    private double diameter; //Поле класса, хранит значение диаметра этого круга
+    private double diameter; //РџРѕР»Рµ РєР»Р°СЃСЃР°, С…СЂР°РЅРёС‚ Р·РЅР°С‡РµРЅРёРµ РґРёР°РјРµС‚СЂР° СЌС‚РѕРіРѕ РєСЂСѓРіР°
  
-    public Circle(double diameter) { // Конструктор, на вход 1 параметр - диаметр
+    public Circle(double diameter) { // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ, РЅР° РІС…РѕРґ 1 РїР°СЂР°РјРµС‚СЂ - РґРёР°РјРµС‚СЂ
         this.diameter = diameter;
 	} 
  
-    public double getArea(){ //Метод получить площадь круга
+    public double getArea(){ //РњРµС‚РѕРґ РїРѕР»СѓС‡РёС‚СЊ РїР»РѕС‰Р°РґСЊ РєСЂСѓРіР°
         double radius = diameter / 2.0;
-        return Math.PI * radius * radius; //Возвращает площадь круга
+        return Math.PI * radius * radius; //Р’РѕР·РІСЂР°С‰Р°РµС‚ РїР»РѕС‰Р°РґСЊ РєСЂСѓРіР°
     }
 	
-	public double getPerimeter(){ //Метод получить периметр круга
-        return Math.PI * diameter; //Возвращает периметр круга
+	public double getPerimeter(){ //РњРµС‚РѕРґ РїРѕР»СѓС‡РёС‚СЊ РїРµСЂРёРјРµС‚СЂ РєСЂСѓРіР°
+        return Math.PI * diameter; //Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРµСЂРёРјРµС‚СЂ РєСЂСѓРіР°
     }
 }

@@ -5,46 +5,46 @@ public class Main {
         Scanner in = new Scanner(System.in);
         int a,b,c;
         
-        System.out.println("Для какой фигуры вы хотите посчитать параметры? (круг, квадрат, прямоугольник, треугольник)");
+        System.out.println("Р”Р»СЏ РєР°РєРѕР№ С„РёРіСѓСЂС‹ РІС‹ С…РѕС‚РёС‚Рµ РїРѕСЃС‡РёС‚Р°С‚СЊ РїР°СЂР°РјРµС‚СЂС‹? (РєСЂСѓРі, РєРІР°РґСЂР°С‚, РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє, С‚СЂРµСѓРіРѕР»СЊРЅРёРє)");
         String answer = in.nextLine();
         
         switch(answer) {
-        case "круг":
-            System.out.println("Введите диаметр круга");
+        case "РєСЂСѓРі":
+            System.out.println("РІРІРµРґРёС‚Рµ РґРёР°РјРµС‚СЂ РєСЂСѓРіР°");
             a = in.nextInt();
             figure s1 = new Circle (a);
-            System.out.println("Периметр круга: "+s1.getPerimeter());
-    		System.out.println("Площадь круга: "+s1.getArea());
+            System.out.println("РїРµСЂРёРјРµС‚СЂ РєСЂСѓРіР°: "+s1.getPerimeter());
+    		System.out.println("РїР»РѕС‰Р°РґСЊ РєСЂСѓРіР°: "+s1.getArea());
             break;
-        case "квадрат":
-            System.out.println("Введите сторону квадрата");
+        case "РєРІР°РґСЂР°С‚":
+            System.out.println("РІРІРµРґРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ РєРІР°РґСЂР°С‚Р°");
             a = in.nextInt();
             figure s2 = new Square (a);
-            System.out.println("Периметр квадрата: "+s2.getPerimeter());
-    		System.out.println("Площадь квадрата: "+s2.getArea());
+            System.out.println("РїРµСЂРёРјРµС‚СЂ РєРІР°РґСЂР°С‚Р°: "+s2.getPerimeter());
+    		System.out.println("РїР»РѕС‰Р°РґСЊ РєРІР°РґСЂР°С‚Р°: "+s2.getArea());
             break;
-        case "прямоугольник":
-            System.out.println("Введите ширину прямоугольника");
+        case "РїСЂВ¤РјРѕСѓРіРѕР»СЊРЅРёРє":
+            System.out.println("РІРІРµРґРёС‚Рµ С€РёСЂРёРЅСѓ РїСЂВ¤РјРѕСѓРіРѕР»СЊРЅРёРєР°");
             a = in.nextInt();
-            System.out.println("Введите высоту прямоугольника");
+            System.out.println("РІРІРµРґРёС‚Рµ РІС‹СЃРѕС‚Сѓ РїСЂВ¤РјРѕСѓРіРѕР»СЊРЅРёРєР°");
             b = in.nextInt();
             figure s3 = new Rectangle (a, b);
-            System.out.println("Периметр прямоугольника: "+s3.getPerimeter());
-    		System.out.println("Площадь прямоугольника: "+s3.getArea());
+            System.out.println("РїРµСЂРёРјРµС‚СЂ РїСЂВ¤РјРѕСѓРіРѕР»СЊРЅРёРєР°: "+s3.getPerimeter());
+    		System.out.println("РїР»РѕС‰Р°РґСЊ РїСЂВ¤РјРѕСѓРіРѕР»СЊРЅРёРєР°: "+s3.getArea());
             break;
-        case "треугольник":
-            System.out.println("Введите первую сторону треугольника");
+        case "С‚СЂРµСѓРіРѕР»СЊРЅРёРє":
+            System.out.println("РІРІРµРґРёС‚Рµ РїРµСЂРІСѓСЋ СЃС‚РѕСЂРѕРЅСѓ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°");
             a = in.nextInt();
-            System.out.println("Введите вторую сторону треугольника");
+            System.out.println("РІРІРµРґРёС‚Рµ РІС‚РѕСЂСѓСЋ СЃС‚РѕСЂРѕРЅСѓ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°");
             b = in.nextInt();
-            System.out.println("Введите угол между сторонами треугольника");
+            System.out.println("РІРІРµРґРёС‚Рµ СѓРіРѕР» РјРµР¶РґСѓ СЃС‚РѕСЂРѕРЅР°РјРё С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°");
             c = in.nextInt();            
             figure s4 = new Triangle (a, b, c);
-            System.out.println("Периметр треугольника: "+s4.getPerimeter());
-    		System.out.println("Площадь треугольника: "+s4.getArea());
+            System.out.println("РїРµСЂРёРјРµС‚СЂ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°: "+s4.getPerimeter());
+    		System.out.println("РїР»РѕС‰Р°РґСЊ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°: "+s4.getArea());
             break;
         default:
-            System.out.println("Вы ввели неподходящий символ");
+            System.out.println("РІС‹ РІРІРµР»Рё РЅРµРїРѕРґС…РѕРґСЏС‰РёР№ СЃРёРјРІРѕР»");
         }
     }
 }
