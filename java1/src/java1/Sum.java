@@ -1,11 +1,11 @@
 package java1;
 
-public class Sum { //Ñóììà 2 ÷èñåë
+public class Sum { //Ğ¡ÑƒĞ¼Ğ¼Ğ° 2 Ñ‡Ğ¸ÑĞµĞ»
 	public static void main(String[] args) {
     	int number1 = 2;
     	int number2 = 3;
 		
-		System.out.print("Ñóììà = ");
+		System.out.print("Ğ¡ÑƒĞ¼Ğ¼Ğ° = ");
 		System.out.print(number1 + number2);
 	}
 }

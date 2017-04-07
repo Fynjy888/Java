@@ -1,17 +1,17 @@
 package java1;
 
-public class Degree { //Возвести число в степень
+public class Degree { //Р’РѕР·РІРµСЃС‚Рё С‡РёСЃР»Рѕ РІ СЃС‚РµРїРµРЅСЊ
 	public static void main(String[] args) {
-    	int number = 3; //число
-    	int degree = 3; //степень
+    	int number = 3; //С‡РёСЃР»Рѕ
+    	int degree = 3; //СЃС‚РµРїРµРЅСЊ
     	int res = number;
-    	if (degree == 0) //если степень 0, то результат 1
+    	if (degree == 0) //РµСЃР»Рё СЃС‚РµРїРµРЅСЊ 0, С‚Рѕ СЂРµР·СѓР»СЊС‚Р°С‚ 1
     		res = 1;
 		else 
 				for (int x = 0; x < (degree - 1); x = x + 1) {
 					res = number * res; 
 				}
-		System.out.print("Результат: ");
+		System.out.print("Р РµР·СѓР»СЊС‚Р°С‚: ");
 		System.out.print(res);
 	}
 }
