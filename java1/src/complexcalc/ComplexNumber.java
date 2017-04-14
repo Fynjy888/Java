@@ -1,7 +1,6 @@
 package complexcalc;
 
 public class ComplexNumber { 
-    private static final double EPS = 1e-12; 
     public double re, im; 
     
    ComplexNumber(double re, double im){ //Метод класса задать комплексное число
