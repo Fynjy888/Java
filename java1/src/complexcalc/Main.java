@@ -1,57 +1,44 @@
 package complexcalc;
 import java.util.Scanner;
-public class main { 
+public class Main { 
 	public static void main(String[] args){ 
         Scanner scn = new Scanner(System.in);     
-       ComplexNumber z8 = new ComplexNumber(), 
-                       z9 = new ComplexNumber(), 
-                       res = new ComplexNumber(); 
+        ComplexNumber z1 = new ComplexNumber(); 
+        ComplexNumber z2 = new ComplexNumber(); 
+        ComplexNumber res = new ComplexNumber(); 
        
 		 System.out.println("Введите действительную часть первго числа");
-		 double t = scn.nextDouble();
-		 z8.re = t;
+		 z1.re = scn.nextDouble();
 		 System.out.println("Введите мнимую часть первго числа");
-//
-		 z9.im = scn.nextDouble();
+		 z1.im = scn.nextDouble();
 		 System.out.println("Введите действительную часть второго числа");
-		 z8.re = scn.nextDouble();
+		 z2.re = scn.nextDouble();
 		 System.out.println("Введите мнимую часть второго числа");
-		 z9.im = scn.nextDouble();
+		 z2.im = scn.nextDouble();
 		 
 		 System.out.println("Введите действие с числами (+,-,*,/)");
 		 scn.nextLine();   
 		 String name = scn.nextLine();
-	     switch(name) {
+  	     z1.pr();
+ 		 System.out.print(" " + name + " ");
+ 		 z2.pr();
+ 		 System.out.print(" = ");
+		 
+		 switch(name) {
 	        case "+":
-	  	     z8.pr();
-	 		 System.out.print(" + ");
-	 		 z9.pr();
-	 		 System.out.print(" = ");
-		     res = add(z8, z9);
+		     res = ComplexOperations.add(z1, z2);
 	 		 res.pr();		     
 	        break;
 	        case "-":
-	  	     z8.pr();
-	 		 System.out.print(" - ");
-	 		 z9.pr();
-	 		 System.out.print(" = ");
-		     res = sub(z8, z9);
+		     res = ComplexOperations.sub(z1, z2);
 	 		 res.pr();		     
 	        break;
 	        case "*":
-	  	     z8.pr();
-	 		 System.out.print(" * ");
-	 		 z9.pr();
-	 		 System.out.print(" = ");
-		     res = mul(z8, z9);
+		     res = ComplexOperations.mul(z1, z2);
 	 		 res.pr();		     
 	        break;
 	        case "/":
-	  	     z8.pr();
-	 		 System.out.print(" / ");
-	 		 z9.pr();
-	 		 System.out.print(" = ");
-		     res = div(z8, z9);
+		     res = ComplexOperations.div(z1, z2);
 	 		 res.pr();		     
 	        break;
 	        default:

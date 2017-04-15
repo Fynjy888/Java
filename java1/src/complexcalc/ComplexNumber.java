@@ -30,5 +30,5 @@ public class ComplexNumber {
    public double mod()  { //вывод комплексного числа
    return Math.sqrt(re * re + im * im);
    }
-
+   
 }
