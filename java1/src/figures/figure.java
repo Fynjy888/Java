@@ -1,12 +1,8 @@
 package figures;
 
-public class figure { //Главный класс фигура, от которого будут наследоваться остальные классы
+abstract public class figure { //Главный класс фигура, от которого будут наследоваться остальные классы
 
-    double getArea() { //Метод класса, который рассчитывает площадь фигуры
-        return 0;
-    }
-
-    double getPerimeter() { //Метод класса, который рассчитывает периметр фигуры
-        return 0;
-    }
+    abstract double getArea();
+    
+    abstract double getPerimeter();
 }
