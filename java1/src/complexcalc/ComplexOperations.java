@@ -1,19 +1,19 @@
 package complexcalc;
 
-public class ComplexOperations extends ComplexNumber{
+public class ComplexOperations{
 	
-	   public ComplexNumber add(ComplexNumber z){ 
-	       return new ComplexNumber(re + z.re, im + z.im); 
+	   public ComplexNumber add (ComplexNumber z1, ComplexNumber z2){ 
+	       return new ComplexNumber(z1.re + z2.re, z1.im + z2.im); 
 	   } 
-	   public ComplexNumber sub(ComplexNumber z){ 
-	       return new ComplexNumber(re - z.re, im - z.im); 
+	   public ComplexNumber sub (ComplexNumber z1, ComplexNumber z2){ 
+	       return new ComplexNumber(z1.re - z2.re, z1.im - z2.im); 
 	   } 
-	   public ComplexNumber mul(ComplexNumber z){ 
-	       return new ComplexNumber(re * z.re - im * z.im, re * z.im + im * z.re); 
+	   public ComplexNumber mul (ComplexNumber z1, ComplexNumber z2){ 
+	       return new ComplexNumber(z1.re * z2.re - z1.im * z2.im, z1.re * z2.im + z1.im * z2.re); 
 	   } 
 	 
-	   public ComplexNumber div(ComplexNumber z){ 
-	      double m = z.mod(); 
-	      return new ComplexNumber((re * z.re - im * z.im) / m, (im * z.re - re * z.im) / m); 
+	   public ComplexNumber div (ComplexNumber z1, ComplexNumber z2){ 
+	      double m = z2.mod(); 
+	      return new ComplexNumber((z1.re * z2.re - z1.im * z2.im) / m, (z1.im * z2.re - z1.re * z2.im) / m); 
 	   } 
 }

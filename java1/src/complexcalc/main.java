@@ -3,59 +3,60 @@ import java.util.Scanner;
 public class main { 
 	public static void main(String[] args){ 
         Scanner scn = new Scanner(System.in);     
-        ComplexNumber z1 = new ComplexNumber(), 
-                       z2 = new ComplexNumber(), 
+       ComplexNumber z8 = new ComplexNumber(), 
+                       z9 = new ComplexNumber(), 
                        res = new ComplexNumber(); 
-
+       
 		 System.out.println("Введите действительную часть первго числа");
 		 double t = scn.nextDouble();
-		 z1.re = t;
+		 z8.re = t;
 		 System.out.println("Введите мнимую часть первго числа");
 //
-		 z1.im = scn.nextDouble();
+		 z9.im = scn.nextDouble();
 		 System.out.println("Введите действительную часть второго числа");
-		 z2.re = scn.nextDouble();
+		 z8.re = scn.nextDouble();
 		 System.out.println("Введите мнимую часть второго числа");
-		 z2.im = scn.nextDouble();
+		 z9.im = scn.nextDouble();
 		 
 		 System.out.println("Введите действие с числами (+,-,*,/)");
 		 scn.nextLine();   
 		 String name = scn.nextLine();
 	     switch(name) {
 	        case "+":
-	  	     z1.pr();
+	  	     z8.pr();
 	 		 System.out.print(" + ");
-	 		 z2.pr();
+	 		 z9.pr();
 	 		 System.out.print(" = ");
-		     res = z1.add(z2);
+		     res = add(z8, z9);
 	 		 res.pr();		     
 	        break;
 	        case "-":
-	  	     z1.pr();
+	  	     z8.pr();
 	 		 System.out.print(" - ");
-	 		 z2.pr();
+	 		 z9.pr();
 	 		 System.out.print(" = ");
-		     res = z1.sub(z2);
+		     res = sub(z8, z9);
 	 		 res.pr();		     
 	        break;
 	        case "*":
-	  	     z1.pr();
+	  	     z8.pr();
 	 		 System.out.print(" * ");
-	 		 z2.pr();
+	 		 z9.pr();
 	 		 System.out.print(" = ");
-		     res = z1.mul(z2);
+		     res = mul(z8, z9);
 	 		 res.pr();		     
 	        break;
 	        case "/":
-	  	     z1.pr();
+	  	     z8.pr();
 	 		 System.out.print(" / ");
-	 		 z2.pr();
+	 		 z9.pr();
 	 		 System.out.print(" = ");
-		     res = z1.div(z2);
+		     res = div(z8, z9);
 	 		 res.pr();		     
 	        break;
 	        default:
 	            System.out.print("вы ввели неподходящий символ");
 	     }  
 	  }
+
 }
